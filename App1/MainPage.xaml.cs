@@ -20,6 +20,8 @@ namespace App1
             _productcollection = new App1.ProductCollection();
 
             cvsProductsLetter.Source = _productcollection.GroupByLetter;
+
+            var x = _productcollection.GroupByLetter2;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)

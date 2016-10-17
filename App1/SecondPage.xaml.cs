@@ -10,6 +10,7 @@ namespace App1
         public SecondPage()
         {
             this.InitializeComponent();
+            cvsProductsLetter.Source = App1.MainPage._productcollection.GroupByLetter2;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
