@@ -9,7 +9,7 @@ namespace App1
 {
     public sealed partial class MainPage : Page
     {
-        public ProductCollection _productcollection;
+        public static ProductCollection _productcollection;
 
         public MainPage()
         {
@@ -101,7 +101,7 @@ namespace App1
         }
         private void btnProdNavigate_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SecondPage), _productcollection);
+            this.Frame.Navigate(typeof(SecondPage));
         }
     }
 }

@@ -28,10 +28,6 @@ namespace App1
                 SystemNavigationManager.GetForCurrentView().AppViewBackButtonVisibility =
                     AppViewBackButtonVisibility.Collapsed;
             }
-
-            var coll = e.Parameter as ProductCollection;
-
-            cvsProductsLetter.Source = coll.GroupByLetter;
         }
     }
 }
