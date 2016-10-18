@@ -101,7 +101,9 @@ namespace App1
         }
         private void btnProdNavigate_Click(object sender, RoutedEventArgs e)
         {
-            this.Frame.Navigate(typeof(SecondPage), _productcollection);
+            ProductCollection newColl = new ProductCollection();
+            newColl.CreateNewGroupByLetter(_productcollection.GroupByLetter);
+            this.Frame.Navigate(typeof(SecondPage), newColl);
         }
     }
 }
