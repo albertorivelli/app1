@@ -47,10 +47,12 @@ namespace App1
         private void btnProdAdd1_Click(object sender, RoutedEventArgs e)
         {
             var p = new Product() { Name = "DEPARTMENT" };
+            var p2 = new Product() { Name = "DEPARTMENT" };
 
             try
             {
                 _productcollection.Add(p);
+                _productcollection.Add2(p2);
             }
             catch (Exception ex)
             {
@@ -61,10 +63,12 @@ namespace App1
         private void btnProdAdd2_Click(object sender, RoutedEventArgs e)
         {
             var p = new Product() { Name = "COFFEE" };
+            var p2 = new Product() { Name = "COFFEE" };
 
             try
             {
                  _productcollection.Add(p);
+                 _productcollection.Add2(p2);
             }
             catch (Exception ex)
             {
@@ -76,10 +80,12 @@ namespace App1
         {
 
             var p = new Product() { Name = "TEA" };
+            var p2 = new Product() { Name = "TEA" };
 
             try
             {
                  _productcollection.Add(p);
+                 _productcollection.Add2(p2);
             }
             catch (Exception ex)
             {
@@ -91,10 +97,12 @@ namespace App1
         {
 
             var p = new Product() { Name = "CAPPUCCINO" };
+            var p2 = new Product() { Name = "CAPPUCCINO" };
 
             try
             {
                  _productcollection.Add(p);
+                _productcollection.Add2(p2);
             }
             catch (Exception ex)
             {

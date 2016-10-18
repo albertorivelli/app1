@@ -37,8 +37,11 @@ namespace App1
         public void Add(Product newitem)
         {
             AddToLetterGroup(newitem);
+        }
 
-            AddToLetterGroup2(new Product() { Name = newitem.Name });
+        public void Add2(Product newitem)
+        {
+            AddToLetterGroup2(newitem);
         }
 
         private void AddToLetterGroup(Product item)
